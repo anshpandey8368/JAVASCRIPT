@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main_box">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Alarm_Clock_Vector.svg/2560px-Alarm_Clock_Vector.svg.png" alt="alarm" width="250px" height="140px">
+            </div>
+            <div class="time"></div>
+            <div class="set-alarm">
+                <select class="hour">
+                    <option value="Hour" selected hidden>Hour</option>
+                </select>
+                <select class="minute">
+                    <option value="Minute" selected hidden>Minute</option>
+                </select>
+                <select class="am-pm">
+                    <option value="AM/PM" selected hidden>AM/PM</option>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <button onclick="setAlarm()" class="submit">Set Alarm</button>
+        </div>
+    </div>
+    <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

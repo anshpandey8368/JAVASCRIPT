@@ -1,0 +1,72 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-image: url(gradient-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.turn {
+    padding: 0.5rem 3rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'poppins', 'sans-serif';
+}
+.game_box {
+    height: 40%;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 2%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+.box {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box1, #box2, #box4 , #box5 {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#box3, #box6 {
+    border-bottom: 1px solid white;
+}
+#box7, #box8 {
+    border-right: 1px solid white;
+}
+.NG {
+    padding: 0.7rem 2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    visibility: hidden;
+}
